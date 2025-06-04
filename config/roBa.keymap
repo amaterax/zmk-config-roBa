@@ -67,30 +67,28 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W         &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A         &kp S         &kp D         &kp F             &kp G        &kp TAB             &kp ESC            &kp H        &kp J  &kp K      &kp L    &lt_to_layer_0 3 SEMICOLON
-&kp Z         &kp X         &kp C         &kp V             &kp B        &mkp MB2            &mkp MB1           &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 1 ENTER  &kp LEFT_SHIFT      &kp RIGHT_COMMAND  &lt 2 SPACE                             &lt_to_layer_0 5 CAPSLOCK
+&kp Q         &kp W         &kp E         &kp R             &kp T                                         &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A         &kp S         &kp D         &kp F             &kp G  &kp TAB             &kp ESC            &kp H        &kp J  &kp K      &kp L    &kp ENTER
+&kp Z         &kp X         &kp C         &kp V             &kp B  &mkp MB2            &kp QUESTION       &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
+&kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_CONTROL  &to 1  &kp LEFT_SHIFT      &kp RIGHT_COMMAND  &lt 2 SPACE                             &lt_to_layer_0 5 CAPSLOCK
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
             bindings = <
-&kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)         &kp LS(N5)                            &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp MINUS
-&kp PIPE    &kp BSLH    &kp APOS    &kp DOUBLE_QUOTES  &kp GRAVE   &trans      &kp ASTERISK  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON       &kp SEMICOLON
-&kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)         &kp LS(N0)  &trans      &kp FSLH      &kp PLUS   &kp LBKT              &kp RBKT               &kp FSLH        &trans
-&trans      &trans      &trans      &trans             &trans      &trans      &trans        &trans                                                                  &trans
+&kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)         &kp LS(N5)                            &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &kp EQUAL
+&kp SEMI    &kp COLON   &kp APOS    &kp DOUBLE_QUOTES  &kp GRAVE   &trans      &kp ASTERISK  &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH      &trans
+&kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)         &kp LS(N0)  &trans      &kp FSLH      &kp PLUS        &kp LBKT              &kp RBKT               &kp BACKSLASH  &trans
+&trans      &trans      &trans      &trans             &trans      &trans      &trans        &trans                                                                      &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15                            &kp EQUAL         &kp N7  &kp N8  &kp N9  &kp N0
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans      &kp ASTERISK  &kp MINUS         &kp N4  &kp N5  &kp N6  &kp N0
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans      &kp FSLH      &kp LEFT_BRACKET  &kp N1  &kp N2  &kp N3  &trans
-&trans   &trans   &trans   &trans   &trans   &trans      &trans        &trans                                    &trans
+&kp F11  &kp F12  &kp F13  &kp F14  &kp F15                            &kp MINUS     &kp N7  &kp N8  &kp N9  &kp EQUAL
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans      &kp ASTERISK  &kp NUMBER_0  &kp N4  &kp N5  &kp N6  &trans
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans      &kp FSLH      &kp PLUS      &kp N1  &kp N2  &kp N3  &trans
+&trans   &trans   &trans   &trans   &trans   &trans      &trans        &trans                                &trans
             >;
         };
 
