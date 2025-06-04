@@ -74,10 +74,10 @@
 
         FUNCTION {
             bindings = <
-&kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)         &kp LS(N5)                        &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp MINUS
-&kp PIPE    &kp BSLH    &kp APOS    &kp DOUBLE_QUOTES  &kp GRAVE   &trans      &kp F13   &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON       &kp SEMICOLON
-&kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)         &kp LS(N0)  &trans      &kp FSLH  &kp PLUS   &kp LBKT              &kp RBKT               &kp FSLH        &trans
-&trans      &trans      &trans      &trans             &trans      &trans      &trans    &trans                                                                  &trans
+&kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)         &kp LS(N5)                            &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp MINUS
+&kp PIPE    &kp BSLH    &kp APOS    &kp DOUBLE_QUOTES  &kp GRAVE   &trans      &kp ASTERISK  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON       &kp SEMICOLON
+&kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)         &kp LS(N0)  &trans      &kp FSLH      &kp PLUS   &kp LBKT              &kp RBKT               &kp FSLH        &trans
+&trans      &trans      &trans      &trans             &trans      &trans      &trans        &trans                                                                  &trans
             >;
         };
 
