@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W         &kp E         &kp R             &kp T                                                    &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A         &kp S         &kp D         &kp F             &kp G  &kp TAB                        &kp ESC            &kp H        &kp J  &kp K      &kp L    &lt_to_layer_0 3 ENTER
-&kp Z         &kp X         &kp C         &kp V             &kp B  &lt_to_layer_0 6 QUESTION      &kp QUESTION       &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_CONTROL  &to 1  &kp LEFT_SHIFT                 &kp RIGHT_COMMAND  &lt 2 SPACE                             &lt_to_layer_0 5 CAPSLOCK
+&kp Q         &kp W         &kp E               &kp R             &kp T                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A         &kp S         &lt_to_layer_0 3 D  &kp F             &kp G  &kp TAB                         &kp ESC            &kp H        &kp J  &kp K      &kp L    &kp ENTER
+&kp Z         &kp X         &kp C               &kp V             &kp B  &lt_to_layer_0 6 SEMICOLON      &kp QUESTION       &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
+&kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_ALT        &kp LEFT_CONTROL  &to 1  &kp LEFT_SHIFT                  &kp RIGHT_COMMAND  &lt 2 SPACE                             &lt_to_layer_0 5 CAPSLOCK
             >;
         };
 
@@ -94,10 +94,10 @@
 
         ARROW {
             bindings = <
-&kp LC(A)           &kp HOME            &kp UP_ARROW      &kp END              &kp LC(E)                                &kp LG(LEFT_ARROW)  &kp LG(LEFT_ARROW)  &mkp MB3  &kp LG(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)
-&kp LEFT_ARROW      &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp RIGHT_ARROW      &trans      &trans  &mkp MB1            &mkp MB1            &mkp MB3  &mkp MB2             &trans
-&kp LC(LEFT_ARROW)  &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(RIGHT_ARROW)  &trans      &trans  &mkp MB4            &mkp MB4            &mkp MB3  &mkp MB5             &trans
-&trans              &trans              &trans            &trans               &trans               &trans      &trans  &trans                                                                 &trans
+&trans  &kp LEFT_CONTROL  &trans  &kp LC(A)  &kp LC(E)                        &kp LC(A)     &kp HOME      &kp UP      &kp END        &kp LC(E)
+&trans  &kp LEFT_SHIFT    &trans  &mkp MB1   &mkp MB2   &mkp MB3      &trans  &kp LEFT      &kp LEFT      &kp DOWN    &kp RIGHT      &trans
+&trans  &kp LEFT_COMMAND  &trans  &mkp MB4   &mkp MB5   &mkp MB3      &trans  &kp LC(LEFT)  &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&trans  &trans            &trans  &trans     &trans     &trans        &trans  &trans                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -105,10 +105,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp LC(A)  &mkp MB3  &kp LC(E)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1   &mkp MB3  &mkp MB2   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4   &mkp MB3  &mkp MB5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &trans
             >;
         };
 
