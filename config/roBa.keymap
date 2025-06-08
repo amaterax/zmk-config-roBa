@@ -51,7 +51,7 @@
             bindings = <
 &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)         &kp LS(N5)                            &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &kp EQUAL
 &kp SEMI    &kp COLON   &kp APOS    &kp DOUBLE_QUOTES  &kp GRAVE   &trans      &kp ASTERISK  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH      &trans
-&kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)         &kp TILDE2  &trans      &kp FSLH      &kp PLUS        &kp LBKT              &kp RBKT               &kp BACKSLASH  &trans
+&kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)         &kp TILDE   &trans      &kp FSLH      &kp PLUS        &kp LBKT              &kp RBKT               &kp BACKSLASH  &trans
 &trans      &trans      &trans      &trans             &trans      &trans      &trans        &trans                                                                      &trans
             >;
         };
