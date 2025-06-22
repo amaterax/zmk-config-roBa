@@ -40,37 +40,37 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W         &kp E         &kp R             &kp T                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A         &kp S         &lt 3 D       &kp F             &kp G  &kp TAB                         &kp ESCAPE         &kp H        &kp J  &kp K      &kp L    &kp ENTER
-&kp Z         &kp X         &kp C         &kp V             &kp B  &lt_to_layer_0 6 SEMICOLON      &kp QUESTION       &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 1  &kp LEFT_SHIFT                  &kp RIGHT_COMMAND  &lt 2 SPACE                             &lt 5 CAPSLOCK
+&kp Q         &kp W         &kp E         &kp R             &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A         &kp S         &lt 3 D       &kp F             &kp G  &kp TAB                         &kp ESCAPE              &kp H        &kp J  &kp K      &kp L    &kp ENTER
+&kp Z         &kp X         &kp C         &kp V             &kp B  &lt_to_layer_0 6 SEMICOLON      &lt_to_layer_0 4 SLASH  &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
+&kp QUESTION  &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 1  &kp LEFT_SHIFT                  &kp RIGHT_COMMAND       &lt 2 SPACE                             &lt 5 CAPSLOCK
             >;
         };
 
         FUNCTION {
             bindings = <
-&kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)         &kp LS(N5)                            &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &kp EQUAL
-&kp SEMI    &kp COLON   &kp APOS    &kp DOUBLE_QUOTES  &kp GRAVE   &trans      &kp ASTERISK  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH      &trans
-&kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)         &kp TILDE   &trans      &kp FSLH      &kp PLUS        &kp LBKT              &kp RBKT               &kp BACKSLASH  &trans
+&kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)         &kp LS(N5)                            &kp PLUS        &kp PIPE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&kp SEMI    &kp COLON   &kp APOS    &kp DOUBLE_QUOTES  &kp GRAVE   &trans      &kp ASTERISK  &kp MINUS       &kp SLASH      &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)         &kp TILDE   &trans      &kp FSLH      &kp UNDERSCORE  &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
 &trans      &trans      &trans      &trans             &trans      &trans      &trans        &trans                                                                      &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15                            &kp UNDERSCORE  &kp N7  &kp N8  &kp N9  &kp EQUAL
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans      &kp ASTERISK  &kp MINUS       &kp N4  &kp N5  &kp N6  &kp N0
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans      &kp FSLH      &kp PLUS        &kp N1  &kp N2  &kp N3  &trans
-&trans   &trans   &trans   &trans   &trans   &trans      &trans        &trans                                  &trans
+&kp F11  &kp F12  &kp F13  &kp F14  &kp F15                            &kp PLUS   &kp N7  &kp N8  &kp N9  &kp EQUAL
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans      &kp ASTERISK  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp N0
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans      &kp FSLH      &kp UNDER  &kp N1  &kp N2  &kp N3  &trans
+&trans   &trans   &trans   &trans   &trans   &trans      &trans        &trans                             &trans
             >;
         };
 
         ARROW {
             bindings = <
-&trans  &kp LEFT_CONTROL  &trans  &kp LC(A)  &kp LC(E)                        &kp LC(A)     &kp HOME      &kp UP      &kp END        &kp LC(E)
-&trans  &kp LEFT_SHIFT    &trans  &mkp MB1   &mkp MB2   &mkp MB3      &trans  &kp LEFT      &kp LEFT      &kp DOWN    &kp RIGHT      &trans
-&trans  &kp LEFT_COMMAND  &trans  &mkp MB4   &mkp MB5   &mkp MB3      &trans  &kp LC(LEFT)  &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
-&trans  &trans            &trans  &trans     &trans     &trans        &trans  &trans                                                 &trans
+&trans  &kp LEFT_CONTROL  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                        &kp HOME      &kp LC(A)     &kp UP      &kp LC(E)      &kp END
+&trans  &kp LEFT_SHIFT    &trans  &mkp MB1            &mkp MB2             &mkp MB3      &trans  &kp LEFT      &kp LEFT      &kp DOWN    &kp RIGHT      &trans
+&trans  &kp LEFT_COMMAND  &trans  &mkp MB4            &mkp MB5             &mkp MB3      &trans  &kp LC(LEFT)  &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &trans
+&trans  &trans            &trans  &trans              &trans               &trans        &trans  &trans                                                 &trans
             >;
         };
 
