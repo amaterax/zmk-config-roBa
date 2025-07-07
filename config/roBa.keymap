@@ -33,6 +33,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        caps_word: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD";
+            #binding-cells = <0>;
+            layers = <0>;
+            continue-list = <UNDERSCORE MINUS>;
+            ignore-numbers;
+        };
     };
 
     keymap {
@@ -43,7 +52,7 @@
 &kp Q         &kp W         &kp E         &kp R             &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A         &kp S         &lt 3 D       &kp F             &kp G  &kp TAB                         &kp ESCAPE              &kp H        &kp J  &kp K      &kp L    &kp ENTER
 &kp Z         &kp X         &kp C         &kp V             &kp B  &lt_to_layer_0 6 SEMICOLON      &lt_to_layer_0 4 SLASH  &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&kp QUESTION  &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 1  &kp LEFT_SHIFT                  &kp RIGHT_COMMAND       &lt 2 SPACE                             &lt 5 CAPSLOCK
+&kp QUESTION  &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 1  &kp LEFT_SHIFT                  &kp RIGHT_COMMAND       &lt 2 SPACE                             &lt 5 &caps_word
             >;
         };
 
